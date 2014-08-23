@@ -48,4 +48,6 @@ Icon
 
 ###Build Files###
 
+gulpfile.js
+package.json
 *.css
