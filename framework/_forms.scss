@@ -1,0 +1,61 @@
+.form, .form fieldset {
+	@include clearfix();
+
+	.form-input, .form-action {
+		margin-bottom: $margin;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		.form-help {
+			display: block;
+			padding: $padding/2 0 0;
+			font-size: $basesize*0.9;
+		}
+	}
+
+	.form-action {
+
+		.form-alternate {
+			display: inline;
+			float: right;
+
+			a.button {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.has-success {
+		color: $success;
+
+		input, textarea {
+			border-color: $success !important;
+		}
+	}
+
+	.has-error {
+		color: $error;
+
+		input, textarea {
+			border-color: $error !important;
+		}
+	}
+
+	.has-info {
+		color: $info;
+
+		input, textarea {
+			border-color: $info !important;
+		}
+	}
+
+	.has-alert {
+		color: $alert;
+
+		input, textarea {
+			border-color: $alert !important;
+		}
+	}
+}

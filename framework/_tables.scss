@@ -1,0 +1,50 @@
+.striped {
+
+	thead {
+		tr { border-bottom: 1px solid $border; }
+	}
+	
+	tfoot {
+		tr { border-top: 1px solid $border; }
+	}
+	
+	tbody {
+		tr:nth-child(2n) {
+			
+			td {
+				background: darken($background, 3);
+			}
+		}
+
+		tr:hover {
+			td {
+				background: darken($background, 10);
+			}
+		}
+	}
+}
+
+.outlined {
+	border: solid $border;
+	border-width: 1px 0 0 1px;
+
+	thead, tfoot {
+		tr {
+			th {
+				border-right: 1px solid $border;
+				border-bottom: 1px solid $border;
+			}
+		}
+	}
+	
+	tbody {
+		
+		tr {
+			
+			td {
+				border-right: 1px solid $border;
+				border-bottom: 1px solid $border;
+			}
+		}
+	}
+}

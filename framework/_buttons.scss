@@ -1,0 +1,168 @@
+// buttons
+
+input[type=submit].button,
+input[type=reset].button,
+input[type=button].button,
+button.button,
+span.button {
+	display: inline-block;
+	margin: 0;
+	margin-right: $margin/2;
+	padding: $padding/2 $padding*0.75;
+}
+
+a.button, a.button:link, a.button:visited, a.button:hover {
+	display: inline-block;
+	margin: 0;
+	margin-right: $margin/2;
+	padding: $padding/2 $padding*0.75;
+	
+	line-height: normal;
+	text-decoration: none;
+}
+
+// button base
+.button {
+	background: $midgrey;
+	color: $light !important;
+	border: 1px solid;
+	border-color: $midgrey;
+	outline: none;
+
+	font-size: $basesize !important;
+	font-weight: 300;
+	
+	&:hover { background: lighten($midgrey, 5); }
+	&:active, &.active { background: darken($midgrey, 10); }
+	
+	i { display: inline-block; }
+}
+
+// all the colours
+
+.button-alt {
+	background: $darkgrey;
+	border-color: $darkgrey;
+
+	&:hover { background: lighten($darkgrey, 5); }
+	&:active, &.active { background: darken($darkgrey, 10); }
+}
+
+.button-pink {
+	background: $pink;
+	border-color: $pink;
+
+	&:hover { background: lighten($pink, 5); }
+	&:active, &.active {background: darken($pink, 10); }
+}
+.button-red {
+	background: $red;
+	border-color: $red;
+
+	&:hover { background: lighten($red, 5); }
+	&:active, &.active {background: darken($red, 10); }
+}
+.button-purple {
+	background: $purple;
+	border-color: $purple;
+
+	&:hover { background: lighten($purple, 5); }
+	&:active, &.active {background: darken($purple, 10); }
+}
+.button-blue {
+	background: $blue;
+	border-color: $blue;
+
+	&:hover { background: lighten($blue, 5); }
+	&:active, &.active {background: darken($blue, 10); }
+}
+.button-aqua {
+	background: $aqua;
+	border-color: $aqua;
+
+	&:hover { background: lighten($aqua, 5); }
+	&:active, &.active {background: darken($aqua, 10); }
+}
+.button-green {
+	background: $green;
+	border-color: $green;
+
+	&:hover { background: lighten($green, 5); }
+	&:active, &.active {background: darken($green, 10); }
+}
+
+.button-muted {
+	background: lighten($midgrey, 20);
+	border-color: lighten($midgrey, 20);
+
+	&:hover { background: lighten($midgrey, 25); }
+	&:active, &.active {background: lighten($midgrey, 10); }
+}
+
+// disabled buttons
+
+.button[disabled] {
+	background: lighten($midgrey, 20) !important;
+	border-color: lighten($midgrey, 20) !important;
+
+	&:hover { background: lighten($midgrey, 20) !important; }
+	&:active, &.active {background: lighten($midgrey, 20) !important; }	
+}
+
+// count button
+
+.button-count {
+	position: relative;
+
+	padding: 0 !important;
+	width: 70px;
+	height: 70px;
+	box-sizing: border-box;
+
+	text-align: center;
+
+	span {
+		display: block;
+	}
+
+	span.button-indicator {
+		position: absolute;
+		top: ($basesize*0.6875) * -1;
+		right: ($basesize*0.6875) * -1;
+		
+		padding: 0 $basesize/2;
+		height: 2em;
+		line-height: 2em;
+
+		background: $red;
+		border-radius: 2em;
+
+		font-size: $basesize*0.6875;
+	}
+
+	span.button-number, span.button-icon {
+		padding-top: $basesize*0.875;
+		font-size: $basesize*1.25;
+	}
+
+	span.button-text {
+		font-size: $basesize*0.6875;
+	}
+}
+
+// button group
+
+.button-group {
+	display: inline-block;
+	margin: 0;
+	margin-right: $margin/2;
+	padding: 0;
+	
+	font-size: 0;
+	white-space: nowrap;
+	
+	.button {
+		margin-right: 0 !important;
+		border-left: 1px solid $background;
+	}
+}

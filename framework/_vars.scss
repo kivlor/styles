@@ -1,0 +1,43 @@
+// grid
+
+$max-width: 940px !default;
+
+$column: 60px !default;
+$gutter: 20px !default;
+$max-columns: 12 !default;
+
+// colors
+
+$pink: #d95177 !default;
+$red: #cf2555 !default;
+$purple: #9d56b3 !default;
+$blue: #2da5da !default;
+$aqua: #27c1b9 !default;
+$green: #b6c710 !default;
+$yellow: #fdce12 !default;
+
+$darkgrey: #2d3e4f !default;
+$bluegrey: #3d4d5c !default;
+$midgrey: #7f8c8d !default;
+$lightgrey: #d0d5d8 !default;
+
+$dark: #2d3e4f !default;
+$light: #ecf0f1 !default;
+
+$background: $light !default;
+$color: $dark !default;
+$border: darken($light, 20) !default;
+
+$success: $green !default;
+$error: $red !default;
+$info: $blue !default;
+$alert: $yellow !default;
+
+// fonts
+
+$basesize: 16px !default;
+
+// margins, paddings, yadda
+
+$margin: $basesize;
+$padding: $basesize;

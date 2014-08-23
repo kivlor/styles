@@ -1,0 +1,17 @@
+// functions
+
+// grid function lifted from bourbon.io
+
+@function grid($columns, $container-columns: $max-columns)
+{
+	$width: $columns * $column + ($columns - 1) * $gutter;
+	$container-width: $container-columns * $column + ($container-columns - 1) * $gutter;
+
+	@return percentage($width / $container-width);
+}
+
+@function gutter($container-columns: $max-columns, $gutter: $gutter)
+{
+	$container-width: $container-columns * $column + ($container-columns - 1) * $gutter;
+	@return percentage($gutter / $container-width);
+}

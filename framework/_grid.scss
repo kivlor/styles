@@ -1,0 +1,49 @@
+// the grid...
+
+.inner {
+	margin-left: auto;
+	margin-right: auto;
+	width: $max-width;
+}
+
+.clear, .row { @include clearfix; }
+
+.column, .columns {
+	display: inline;
+	float: left;
+	margin-left: gutter();
+
+	&:first-child, &.first {
+		margin-left: 0;
+	}
+
+	&.one				{ width: grid(1); }
+	&.two				{ width: grid(2); }
+	&.three				{ width: grid(3); }
+	&.four				{ width: grid(4); }
+	&.five				{ width: grid(5); }
+	&.six				{ width: grid(6); }
+	&.seven				{ width: grid(7); }
+	&.eight				{ width: grid(8); }
+	&.nine				{ width: grid(9); }
+	&.ten				{ width: grid(10); }
+	&.eleven			{ width: grid(11); }
+	&.twelve			{ width: grid(12); }
+
+	&.full				{ width: grid(12); }
+	&.half				{ width: grid(6); }
+}
+
+.offset {
+	&.by-one 			{ margin-left: grid(1) + gutter(); }
+	&.by-two 			{ margin-left: grid(2) + gutter(); }
+	&.by-three 			{ margin-left: grid(3) + gutter(); }
+	&.by-four 			{ margin-left: grid(4) + gutter(); }
+	&.by-five 			{ margin-left: grid(5) + gutter(); }
+	&.by-six 			{ margin-left: grid(6) + gutter(); }
+	&.by-seven 			{ margin-left: grid(7) + gutter(); }
+	&.by-eight 			{ margin-left: grid(8) + gutter(); }
+	&.by-nine 			{ margin-left: grid(9) + gutter(); }
+	&.by-ten 			{ margin-left: grid(10) + gutter(); }
+	&.by-eleven 		{ margin-left: grid(11) + gutter(); }
+}

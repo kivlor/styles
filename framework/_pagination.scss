@@ -1,0 +1,44 @@
+.pagination {
+	padding: $padding 0;
+	text-align: center;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			display: inline-block;
+			margin: 0 $margin/3;
+
+			a, a:link, a:visited, a:hover, span {
+				display: block;
+
+				padding: 0 $basesize*0.5;
+				height: $basesize*1.5;
+				line-height: $basesize*1.5;
+
+				background: $midgrey;
+				color: $light;
+				border-radius: $basesize*1.5;
+
+				font-size: $basesize*0.875;
+			}
+
+			&.active a, &.active span, a:hover {
+				background: $blue;
+			}
+		}
+
+		li:first-child, li:last-child {
+			a, a:link, a:visited, a:hover, span {
+				background: transparent;
+				color: $midgrey;
+			}
+
+			a:hover {
+				color: $blue;
+			}
+		}
+	}
+}
