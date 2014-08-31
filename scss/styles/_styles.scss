@@ -7,16 +7,18 @@
 // import the base styles
 
 @import 'base/normalize';
+@import 'base/utilities';
 @import 'base/grid';
 @import 'base/elements';
-@import 'base/utilities';
 
 // import the components styles
 
-@import 'components/table';
-@import 'components/form';
 @import 'components/button';
-@import 'components/pagination';
+@import 'components/form';
 @import 'components/message';
 @import 'components/modal';
+@import 'components/navigation';
+@import 'components/pagination';
 @import 'components/panel';
+@import 'components/table';
+@import 'components/video';

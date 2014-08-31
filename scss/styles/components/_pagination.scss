@@ -18,11 +18,18 @@
 				height: $basesize*1.5;
 				line-height: $basesize*1.5;
 
-				background: $midgrey;
 				color: $light;
 				border-radius: $basesize*1.5;
 
 				font-size: $basesize*0.875;
+			}
+
+			a, a:link, a:visited, a:hover {
+				background: $midgrey;
+			}
+
+			span {
+				background: $midgrey;
 			}
 
 			&.active a, &.active span, a:hover {
@@ -30,7 +37,7 @@
 			}
 		}
 
-		li:first-child, li:last-child {
+		/*li:first-child, li:last-child {
 			a, a:link, a:visited, a:hover, span {
 				background: transparent;
 				color: $midgrey;
@@ -39,6 +46,6 @@
 			a:hover {
 				color: $blue;
 			}
-		}
+		}*/
 	}
 }
