@@ -37,7 +37,8 @@ node_modules
 .LSOverride
 
 # Icon must ends with two \r.
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -48,6 +49,4 @@ Icon
 
 ###Build Files###
 
-gulpfile.js
-package.json
-*.css
+public
