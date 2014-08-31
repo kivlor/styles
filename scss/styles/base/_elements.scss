@@ -41,7 +41,7 @@ mark {
 
 pre {
 	padding: $padding;
-	background-color: darken($background, 5);
+	background-color: darken($background, 3);
 	border-radius: 5px;
 
 	code { display: block; }
@@ -184,11 +184,10 @@ textarea {
 	margin: 0;
 	width: 100%;
 
-	background: lighten($background, 5);
+	background: darken($background, 2);
 	border: 1px solid $border;
+	border-radius: 4px;
 	outline: none;
-
-	box-shadow: 0 2px 0 0 $background inset;
 
 	@include box-sizing(border-box);
 

@@ -8,21 +8,20 @@ $max-columns: 12 !default;
 
 // colors
 
-$pink: #d95177 !default;
-$red: #cf2555 !default;
-$purple: #9d56b3 !default;
-$blue: #2da5da !default;
-$aqua: #27c1b9 !default;
-$green: #b6c710 !default;
-$yellow: #fdce12 !default;
+$dark: #111 !default;
+$light: #fff !default;
 
-$darkgrey: #2d3e4f !default;
-$bluegrey: #3d4d5c !default;
+$darkgrey: #222 !default;
 $midgrey: #7f8c8d !default;
 $lightgrey: #d0d5d8 !default;
 
-$dark: #2d3e4f !default;
-$light: #ecf0f1 !default;
+$pink: #fc589c !default;
+$red: #ac0028 !default;
+$purple: #94008c !default;
+$blue: #0088fc !default;
+$aqua: #008894 !default;
+$green: #00a800 !default;
+$yellow: #fcb800 !default;
 
 $background: $light !default;
 $color: $dark !default;

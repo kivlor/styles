@@ -27,13 +27,14 @@ a.button, a.button:link, a.button:visited, a.button:hover {
 	color: $light !important;
 	border: 1px solid;
 	border-color: $midgrey;
+	border-radius: 4px;
 	outline: none;
 
 	font-size: $basesize !important;
 	font-weight: 300;
 	
 	&:hover { background: lighten($midgrey, 5); }
-	&:active, &.active { background: darken($midgrey, 10); }
+	&:active, &.active { background: darken($midgrey, 5); }
 	
 	i { display: inline-block; }
 }
@@ -45,7 +46,7 @@ a.button, a.button:link, a.button:visited, a.button:hover {
 	border-color: $darkgrey;
 
 	&:hover { background: lighten($darkgrey, 5); }
-	&:active, &.active { background: darken($darkgrey, 10); }
+	&:active, &.active { background: darken($darkgrey, 5); }
 }
 
 .button-pink {
@@ -53,42 +54,49 @@ a.button, a.button:link, a.button:visited, a.button:hover {
 	border-color: $pink;
 
 	&:hover { background: lighten($pink, 5); }
-	&:active, &.active {background: darken($pink, 10); }
+	&:active, &.active {background: darken($pink, 5); }
 }
 .button-red {
 	background: $red;
 	border-color: $red;
 
 	&:hover { background: lighten($red, 5); }
-	&:active, &.active {background: darken($red, 10); }
+	&:active, &.active {background: darken($red, 5); }
 }
 .button-purple {
 	background: $purple;
 	border-color: $purple;
 
 	&:hover { background: lighten($purple, 5); }
-	&:active, &.active {background: darken($purple, 10); }
+	&:active, &.active {background: darken($purple, 5); }
 }
 .button-blue {
 	background: $blue;
 	border-color: $blue;
 
 	&:hover { background: lighten($blue, 5); }
-	&:active, &.active {background: darken($blue, 10); }
+	&:active, &.active {background: darken($blue, 5); }
 }
 .button-aqua {
 	background: $aqua;
 	border-color: $aqua;
 
 	&:hover { background: lighten($aqua, 5); }
-	&:active, &.active {background: darken($aqua, 10); }
+	&:active, &.active {background: darken($aqua, 5); }
 }
 .button-green {
 	background: $green;
 	border-color: $green;
 
 	&:hover { background: lighten($green, 5); }
-	&:active, &.active {background: darken($green, 10); }
+	&:active, &.active {background: darken($green, 5); }
+}
+.button-yellow {
+	background: $yellow;
+	border-color: $yellow;
+
+	&:hover { background: lighten($yellow, 5); }
+	&:active, &.active {background: darken($yellow, 5); }
 }
 
 .button-muted {
@@ -164,5 +172,15 @@ a.button, a.button:link, a.button:visited, a.button:hover {
 	.button {
 		margin-right: 0 !important;
 		border-left: 1px solid $background;
+		border-radius: 0;
+
+		&:first-child {
+			border-left: none;
+			border-radius: 4px 0 0 4px;
+		}
+
+		&:last-child {
+			border-radius: 0 4px 4px 0;
+		}
 	}
 }

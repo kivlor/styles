@@ -12,7 +12,7 @@ var gulp = require('gulp'),
 	onError = function(err) { console.log(err) }
 
 gulp.task('styles', function() {
-	return gulp.src('scss/*.scss')
+	return gulp.src('scss/**/*.scss')
 		.pipe(plumber({errorHandler: onError}))
 		.pipe(sass({ style: 'expanded' }))
 		.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
@@ -23,7 +23,7 @@ gulp.task('styles', function() {
 
 gulp.task('watch', function() {
 	livereload.listen();
-	gulp.watch('scss/*.scss', ['styles']);
+	gulp.watch('scss/**/*.scss', ['styles']);
 	gulp.watch(['dist/**']).on('change', livereload.changed);
 });
 

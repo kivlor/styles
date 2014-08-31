@@ -4,10 +4,69 @@
 		<meta charset="utf-8">
 		<title>Styles</title>
 		<link rel="stylesheet" type="text/css" href="/css/styles.min.css">
+
+		<style type="text/css">
+			#grid .row {
+				margin-bottom: 10px;
+			}
+
+			#grid .column, #grid .columns {
+				box-shadow: inset 0 0 0 1px #ccc;
+			}
+
+				#grid .column p, #grid .columns p {
+					margin: 0;
+					padding: 10px 0;
+					text-align: center;
+				}
+		</style>
 	</head>
 	<body>
 		<div class="inner">
-			<section class="row">
+			<section class="row" id="grid">
+				<h1 class="lead">Grid</h1>
+
+				<div class="row">
+					<div class="first one column"><p>one</p></div>
+					<div class="one column"><p>one</p></div>
+					<div class="one column"><p>one</p></div>
+					<div class="one column"><p>one</p></div>
+					<div class="one column"><p>one</p></div>
+					<div class="one column"><p>one</p></div>
+					<div class="one column"><p>one</p></div>
+					<div class="one column"><p>one</p></div>
+					<div class="one column"><p>one</p></div>
+					<div class="one column"><p>one</p></div>
+					<div class="one column"><p>one</p></div>
+					<div class="one column"><p>one</p></div>
+				</div>
+
+				<div class="row">
+					<div class="first two columns"><p>two</p></div>
+					<div class="two columns"><p>two</p></div>
+					<div class="two columns"><p>two</p></div>
+					<div class="two columns"><p>two</p></div>
+					<div class="two columns"><p>two</p></div>
+					<div class="two columns"><p>two</p></div>
+				</div>
+
+				<div class="row">
+					<div class="first four columns"><p>four</p></div>
+					<div class="four columns"><p>four</p></div>
+					<div class="four columns"><p>four</p></div>
+				</div>
+
+				<div class="row">
+					<div class="first six columns"><p>six</p></div>
+					<div class="six columns"><p>six</p></div>
+				</div>
+
+				<div class="row">
+					<div class="first twelve columns"><p>twelve</p></div>
+				</div>
+			</section>
+
+			<section class="row" id="headings">
 				<h1 class="lead">Headings</h1>
 
 				<h1>h1. styles heading</h1>
@@ -18,13 +77,19 @@
 				<h6>h6. styles heading</h6>
 			</section>
 
-			<section class="row">
+			<section class="row" id="text-blocks">
 				<h1 class="lead">Text Blocks</h1>
 
-				<p>p. Carrie, Moss! First scene in Carrie! Oh. Okay I'm a 32 year old IT-man who works in a basement. Yes, I do the whole Lonely Hearts thing! From today, dialing 999 won't get you the Emergency Services, and that's not the only thing that's changing! You know, it's high tide. But we're not on the coast. I'm closed for maintenance! Closed for maintenance? I've fallen to the communists! Well, they do have some strong arguments. A gay musical, called Gay. That's quite gay. Gay musical? Aren't all musicals gay? This must be, like, the gayest musical ever. Might want to play a bit hard to get. Hello? I've had a bit of a tumble.</p>
+				<h4>Paragraph</h4>
+				<p>p.lead Carrie, Moss! First scene in Carrie! Oh. Okay I'm a 32 year old IT-man who works in a basement. Yes, I do the whole Lonely Hearts thing! From today, dialing 999 won't get you the Emergency Services, and that's not the only thing that's changing! You know, it's high tide. But we're not on the coast. I'm closed for maintenance! Closed for maintenance? I've fallen to the communists! Well, they do have some strong arguments. A gay musical, called Gay. That's quite gay. Gay musical? Aren't all musicals gay? This must be, like, the gayest musical ever. Might want to play a bit hard to get. Hello? I've had a bit of a tumble.</p>
+				
+				<h4>Lead Paragraph</h4>
 				<p class="lead">p.lead Carrie, Moss! First scene in Carrie! Oh. Okay I'm a 32 year old IT-man who works in a basement. Yes, I do the whole Lonely Hearts thing! From today, dialing 999 won't get you the Emergency Services, and that's not the only thing that's changing! You know, it's high tide. But we're not on the coast. I'm closed for maintenance! Closed for maintenance? I've fallen to the communists! Well, they do have some strong arguments. A gay musical, called Gay. That's quite gay. Gay musical? Aren't all musicals gay? This must be, like, the gayest musical ever. Might want to play a bit hard to get. Hello? I've had a bit of a tumble.</p>
 
+				<h4>Blockquote</h4>
 				<blockquote>blockquote. Carrie, Moss! First scene in Carrie! Oh. Okay I'm a 32 year old IT-man who works in a basement. Yes, I do the whole Lonely Hearts thing! From today, dialing 999 won't get you the Emergency Services, and that's not the only thing that's changing! You know, it's high tide. But we're not on the coast. I'm closed for maintenance! Closed for maintenance? I've fallen to the communists! Well, they do have some strong arguments. A gay musical, called Gay. That's quite gay. Gay musical? Aren't all musicals gay? This must be, like, the gayest musical ever. Might want to play a bit hard to get. Hello? I've had a bit of a tumble.</blockquote>
+
+				<h4>Pre</h4>
 				<pre>
 &lt;codeystuff&gt;
     &lt;whatevs&gt;
@@ -33,34 +98,38 @@
 &lt;codeystuff&gt;</pre>
 			</section>
 
-			<section class="row">
+			<section class="row" id="lists">
 				<h1 class="lead">Lists</h1>
 
+				<h4>Unordered List</h4>
 				<ul>
-					<li>ul. So, remember the new number! 0118 999! 88199, 9119 725! ... 3!</li>
-					<li>ul. So, remember the new number! 0118 999! 88199, 9119 725! ... 3!</li>
-					<li>ul. So, remember the new number! 0118 999! 88199, 9119 725! ... 3!</li>
-					<li>ul. So, remember the new number! 0118 999! 88199, 9119 725! ... 3!</li>
+					<li>So, remember the new number! 0118 999! 88199, 9119 725! ... 3!</li>
+					<li>So, remember the new number! 0118 999! 88199, 9119 725! ... 3!</li>
+					<li>So, remember the new number! 0118 999! 88199, 9119 725! ... 3!</li>
+					<li>So, remember the new number! 0118 999! 88199, 9119 725! ... 3!</li>
 				</ul>
 
+				<h4>Ordered List</h4>
 				<ol>
-					<li>ol. So, remember the new number! 0118 999! 88199, 9119 725! ... 3!</li>
-					<li>ol. So, remember the new number! 0118 999! 88199, 9119 725! ... 3!</li>
-					<li>ol. So, remember the new number! 0118 999! 88199, 9119 725! ... 3!</li>
-					<li>ol. So, remember the new number! 0118 999! 88199, 9119 725! ... 3!</li>
+					<li>So, remember the new number! 0118 999! 88199, 9119 725! ... 3!</li>
+					<li>So, remember the new number! 0118 999! 88199, 9119 725! ... 3!</li>
+					<li>So, remember the new number! 0118 999! 88199, 9119 725! ... 3!</li>
+					<li>So, remember the new number! 0118 999! 88199, 9119 725! ... 3!</li>
 				</ol>
 
+				<h4>Definition List</h4>
 				<dl>
-					<dt>dl.</dt> <dd>So, remember the new number! 0118 999! 88199, 9119 725! ... 3!</dd>
-					<dt>dl.</dt> <dd>So, remember the new number! 0118 999! 88199, 9119 725! ... 3!</dd>
-					<dt>dl.</dt> <dd>So, remember the new number! 0118 999! 88199, 9119 725! ... 3!</dd>
-					<dt>dl.</dt> <dd>So, remember the new number! 0118 999! 88199, 9119 725! ... 3!</dd>
+					<dt>So, remember the new number!</dt> <dd>0118 999! 88199, 9119 725! ... 3!</dd>
+					<dt>So, remember the new number!</dt> <dd>0118 999! 88199, 9119 725! ... 3!</dd>
+					<dt>So, remember the new number!</dt> <dd>0118 999! 88199, 9119 725! ... 3!</dd>
+					<dt>So, remember the new number!</dt> <dd>0118 999! 88199, 9119 725! ... 3!</dd>
 				</dl>
 			</section>
 
-			<section class="row">
+			<section class="row" id="tables">
 				<h1 class="lead">Tables</h1>
 
+				<h4>No Class</h4>
 				<table>
 					<thead>
 						<tr>
@@ -76,9 +145,9 @@
 							<td>andrew@styles.com</td>
 						</tr>
 						<tr>
-							<td>Nathan</td>
-							<td>VanderByl</td>
-							<td>nathan@styles.com</td>
+							<td>George</td>
+							<td>Pettit</td>
+							<td>george@styles.com</td>
 						</tr>
 						<tr>
 							<td>Frank</td>
@@ -88,6 +157,7 @@
 					</tbody>
 				</table>
 
+				<h4>Striped</h4>
 				<table class="striped">
 					<thead>
 						<tr>
@@ -103,9 +173,9 @@
 							<td>andrew@styles.com</td>
 						</tr>
 						<tr>
-							<td>Nathan</td>
-							<td>VanderByl</td>
-							<td>nathan@styles.com</td>
+							<td>George</td>
+							<td>Pettit</td>
+							<td>george@styles.com</td>
 						</tr>
 						<tr>
 							<td>Frank</td>
@@ -115,6 +185,7 @@
 					</tbody>
 				</table>
 
+				<h4>Outlined</h4>
 				<table class="outlined">
 					<thead>
 						<tr>
@@ -130,9 +201,9 @@
 							<td>andrew@styles.com</td>
 						</tr>
 						<tr>
-							<td>Nathan</td>
-							<td>VanderByl</td>
-							<td>nathan@styles.com</td>
+							<td>George</td>
+							<td>Pettit</td>
+							<td>george@styles.com</td>
 						</tr>
 						<tr>
 							<td>Frank</td>
@@ -142,6 +213,7 @@
 					</tbody>
 				</table>
 
+				<h4>Striped &amp; Outlined</h4>
 				<table class="striped outlined">
 					<thead>
 						<tr>
@@ -157,9 +229,9 @@
 							<td>andrew@styles.com</td>
 						</tr>
 						<tr>
-							<td>Nathan</td>
-							<td>VanderByl</td>
-							<td>nathan@styles.com</td>
+							<td>George</td>
+							<td>Pettit</td>
+							<td>george@styles.com</td>
 						</tr>
 						<tr>
 							<td>Frank</td>
@@ -170,7 +242,7 @@
 				</table>
 			</section>
 
-			<section class="row">
+			<section class="row" id="forms">
 				<h1 class="lead">Forms</h1>
 
 				<form class="form">
@@ -211,7 +283,7 @@
 
 			</section>
 
-			<section class="row">
+			<section class="row" id="inputs">
 				<h1 class="lead">Inputs</h1>
 				<form class="form">
 					<div class="form-input first four columns">
@@ -253,7 +325,7 @@
 				</form>
 			</section>
 
-			<section class="row">
+			<section class="row" id="buttons">
 				<h1 class="lead">Buttons</h1>
 
 				<p>
@@ -288,6 +360,7 @@
 					<input type="button" class="button button-blue" value=".button-blue">
 					<input type="button" class="button button-aqua" value=".button-aqua">
 					<input type="button" class="button button-green" value=".button-green">
+					<input type="button" class="button button-yellow" value=".button-yellow">
 				</p>
 
 				<div class="button-group">
@@ -316,6 +389,70 @@
 				<div class="alert message">
 					<strong>Whatevs!</strong> Dude, be careful, k?
 				</div>
+			</section>
+
+			<section class="row">
+				<h1 class="lead">Pagination</h1>
+			</section>
+
+			<section class="row">
+				<h1 class="lead">Panels</h1>
+
+				<h4>With a Header</h4>
+				<section class="panel first six columns">
+					<header class="panel-header">
+						<h4>It's Me! I was the turkey all along</h4>
+					</header>
+					<section class="panel-body">
+						<p>Carrie, Moss! First scene in Carrie! Oh. Okay I'm a 32 year old IT-man who works in a basement. Yes, I do the whole Lonely Hearts thing! From today, dialing 999 won't get you the Emergency Services, and that's not the only thing that's changing! You know, it's high tide. But we're not on the coast. I'm closed for maintenance! Closed for maintenance? I've fallen to the communists! Well, they do have some strong arguments. A gay musical, called Gay. That's quite gay. Gay musical? Aren't all musicals gay? This must be, like, the gayest musical ever. Might want to play a bit hard to get. Hello? I've had a bit of a tumble.</p>
+					</section>
+				</section>
+
+				<section class="panel six columns">
+					<header class="panel-header">
+						<h4>It's Me! I was the turkey all along</h4>
+					</header>
+					<section class="panel-body">
+						<form class="form">
+							<div class="form-input">
+								<input type="text" placeholder="email address">
+							</div>
+
+							<div class="form-input">
+								<input type="password" placeholder="password">
+							</div>
+
+							<div class="form-action">
+								<input type="button" class="button" value="login">
+							</div>
+						</form>
+					</section>
+				</section>
+			</section>
+
+			<h4>Without a Header</h4>
+			<section class="panel first six columns">
+				<section class="panel-body">
+					<p>Carrie, Moss! First scene in Carrie! Oh. Okay I'm a 32 year old IT-man who works in a basement. Yes, I do the whole Lonely Hearts thing! From today, dialing 999 won't get you the Emergency Services, and that's not the only thing that's changing! You know, it's high tide. But we're not on the coast. I'm closed for maintenance! Closed for maintenance? I've fallen to the communists! Well, they do have some strong arguments. A gay musical, called Gay. That's quite gay. Gay musical? Aren't all musicals gay? This must be, like, the gayest musical ever. Might want to play a bit hard to get. Hello? I've had a bit of a tumble.</p>
+				</section>
+			</section>
+
+			<section class="panel six columns">
+				<section class="panel-body">
+					<form class="form">
+						<div class="form-input">
+							<input type="text" placeholder="email address">
+						</div>
+
+						<div class="form-input">
+							<input type="password" placeholder="password">
+						</div>
+
+						<div class="form-action">
+							<input type="button" class="button" value="login">
+						</div>
+					</form>
+				</section>
 			</section>
 		</div>
 	</body>
