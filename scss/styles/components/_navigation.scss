@@ -1,1 +1,95 @@
-.navigation { }
+.navigation {
+	margin-bottom: $margin;
+	width: 100%;
+	overflow: auto;
+
+	background: darken($background, 5);
+	border: 1px solid darken($background, 20);
+	border-radius: 4px;
+
+	header {
+		display: inline;
+		float: left;
+
+		h1 {
+			margin: 0 !important;
+			padding: $padding;
+			font-size: $basesize;
+
+			a, a:link, a:visited, a:hover {
+				color: $darkgrey;
+			}
+		}
+	}
+
+	ul {
+		display: block;
+		width: 100%;
+		overflow: auto;
+
+		list-style: none;
+
+		li {
+			display: inline;
+			float: left;
+			border-right: 1px solid darken($background, 10);
+
+			& > a, a:link, a:visited, a:hover {
+				display: block;
+				padding: $padding;
+
+				color: $darkgrey;
+			}
+		}
+	}
+
+	header + ul {
+		display: inline;
+		float: right;
+		width: auto;
+
+		li:last-child {
+			border-right: 0;
+		}
+	}
+
+	&.inverse {
+		background: $darkgrey;
+		border-color: darken($darkgrey, 20);
+
+		header h1 {
+			color: $light;
+
+			a, a:link, a:visited, a:hover {
+				color: $light;
+			}
+		}
+
+		ul {
+
+			li {
+				border-color: darken($darkgrey, 10);
+
+				& > a, a:link, a:visited, a:hover {
+					color: $light;
+				}
+			}
+		}
+	}
+
+	&.fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+
+		border-radius: 0;
+		border-width: 0 0 1px;
+	}
+}
+
+// fixed navigation should come before inner...
+
+.navigation.fixed + .inner {
+	padding-top: $padding*2 + $basesize + $padding/2; // magic...
+}

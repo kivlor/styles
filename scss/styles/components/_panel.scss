@@ -5,7 +5,7 @@
 		padding: $padding;
 		background: darken($background, 5);
 		border: 1px solid darken($background, 20);
-		border-radius: 3px 3px 0 0;
+		border-radius: 4px 4px 0 0;
 
 		h1, h2, h3, h4, h5, h6 {
 			margin: 0 !important;
@@ -17,7 +17,7 @@
 		padding: $padding;
 
 		border: 1px solid darken($background, 20);
-		border-radius: 3px;
+		border-radius: 4px;
 
 		form {
 			margin: 0 !important;
@@ -30,6 +30,6 @@
 
 	.panel-header + .panel-body {
 		border-width: 0 1px 1px;
-		border-radius: 0 0 3px 3px;
+		border-radius: 0 0 4px 4px;
 	}
 }
