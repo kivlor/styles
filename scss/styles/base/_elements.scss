@@ -16,16 +16,6 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 $margin;
 	padding: 0;
-
-	&.muted {
-		color: lighten($color, 20);
-	}
-}
-
-h1.lead {
-	margin: $margin 0;
-	padding-bottom: $padding;
-	border-bottom: 1px solid darken($background, 20);
 }
 
 // text blocks
@@ -42,28 +32,14 @@ mark {
 pre {
 	padding: $padding;
 	background-color: darken($background, 3);
-	border-radius: 5px;
+	border-radius: $radius/4;
 
 	code { display: block; }
 }
 
 blockquote {
 	padding: $padding;
-	border-left: 2px solid darken($background, 20);
-}
-
-// typography styles
-
-.lead {
-	font-size: $basesize*1.125;
-}
-
-.small {
-	font-size: $basesize*0.9;
-}
-
-.muted {
-	color: $midgrey;
+	border-left: 2px solid $border;
 }
 
 // anchors
@@ -179,6 +155,8 @@ label {
 input[type=text],
 input[type=password],
 input[type=email],
+input[type=number],
+input[type=date],
 textarea {
 	display: block;
 	margin: 0;
@@ -186,7 +164,7 @@ textarea {
 
 	background: darken($background, 2);
 	border: 1px solid $border;
-	border-radius: 4px;
+	border-radius: $radius/4;
 	outline: none;
 
 	@include box-sizing(border-box);
@@ -198,7 +176,9 @@ textarea {
 
 input[type=text],
 input[type=password],
-input[type=email] {
+input[type=email],
+input[type=number],
+input[type=date] {
 	padding: $padding/2 0;
 	text-indent: $padding/2;
 }
@@ -221,4 +201,13 @@ select {
 	outline: none;
 
 	@include box-sizing(border-box);
+}
+
+// images
+
+img {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
 }

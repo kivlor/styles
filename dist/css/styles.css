@@ -208,6 +208,18 @@ table {
   padding-bottom: 16px !important;
 }
 
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.justify {
+  text-align: justify;
+}
+
 .inner {
   margin-left: auto;
   margin-right: auto;
@@ -321,15 +333,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 16px;
   padding: 0;
 }
-h1.muted, h2.muted, h3.muted, h4.muted, h5.muted, h6.muted {
-  color: #444444;
-}
-
-h1.lead {
-  margin: 16px 0;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #cccccc;
-}
 
 p, mark, pre, blockquote {
   margin: 0 0 16px;
@@ -343,7 +346,7 @@ mark {
 pre {
   padding: 16px;
   background-color: #f7f7f7;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 pre code {
   display: block;
@@ -352,18 +355,6 @@ pre code {
 blockquote {
   padding: 16px;
   border-left: 2px solid #cccccc;
-}
-
-.lead {
-  font-size: 18px;
-}
-
-.small {
-  font-size: 14.4px;
-}
-
-.muted {
-  color: #666666;
 }
 
 a, a:link, a:visited, a:hover {
@@ -452,6 +443,8 @@ label[for] {
 input[type=text],
 input[type=password],
 input[type=email],
+input[type=number],
+input[type=date],
 textarea {
   display: block;
   margin: 0;
@@ -468,6 +461,10 @@ input[type=password]:active,
 input[type=password]:focus,
 input[type=email]:active,
 input[type=email]:focus,
+input[type=number]:active,
+input[type=number]:focus,
+input[type=date]:active,
+input[type=date]:focus,
 textarea:active,
 textarea:focus {
   background: #fff;
@@ -475,7 +472,9 @@ textarea:focus {
 
 input[type=text],
 input[type=password],
-input[type=email] {
+input[type=email],
+input[type=number],
+input[type=date] {
   padding: 8px 0;
   text-indent: 8px;
 }
@@ -498,6 +497,13 @@ select {
           box-sizing: border-box;
 }
 
+img {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
 input[type=submit].button,
 input[type=reset].button,
 input[type=button].button,
@@ -516,6 +522,18 @@ a.button, a.button:link, a.button:visited, a.button:hover {
   padding: 8px 12px;
   line-height: normal;
   text-decoration: none;
+}
+
+input[type=submit].button-small,
+input[type=reset].button-small,
+input[type=button].button-small,
+button.button-small,
+span.button-small {
+  padding: 5.33333px 8px;
+}
+
+a.button-small, a.button-small:link, a.button-small:visited, a.button-small:hover {
+  padding: 5.33333px 8px;
 }
 
 .button {
@@ -750,6 +768,38 @@ a.button, a.button:link, a.button:visited, a.button:hover {
   border-color: #fcb800 !important;
 }
 
+.image {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+.image img {
+  display: block;
+  width: 100%;
+}
+.image.rounded {
+  border-radius: 16px;
+}
+.image.rounded:after {
+  border-radius: 16px;
+}
+.image.ellipsed {
+  border-radius: 50%;
+}
+.image.ellipsed:after {
+  border-radius: 50%;
+}
+.image.framed:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  content: ' ';
+  border: 8px solid #cccccc;
+}
+
 .success {
   color: #00a800 !important;
 }
@@ -858,6 +908,7 @@ a.button, a.button:link, a.button:visited, a.button:hover {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
   width: 100%;
   border-radius: 0;
   border-width: 0 0 1px;
@@ -991,4 +1042,59 @@ a.button, a.button:link, a.button:visited, a.button:hover {
 .outlined tbody tr td {
   border-right: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
+}
+
+.tabs {
+  border-bottom: 1px solid #cccccc;
+}
+.tabs ul {
+  margin: 0 0 -1px;
+  padding: 0;
+  list-style: none;
+}
+.tabs ul li {
+  display: inline-block;
+  border-bottom: 1px solid #cccccc;
+}
+.tabs ul li a, .tabs ul li a:link, .tabs ul li a:visited, .tabs ul li a:hover {
+  display: block;
+  padding: 8px 16px;
+  color: #333333;
+  border: 1px solid white;
+  border-bottom: none;
+}
+.tabs ul li a:hover, .tabs ul li a:link:hover, .tabs ul li a:visited:hover, .tabs ul li a:hover:hover {
+  color: #63b7ff;
+}
+.tabs ul li.active {
+  border-bottom: 1px solid white;
+}
+.tabs ul li.active a, .tabs ul li.active a:link, .tabs ul li.active a:visited, .tabs ul li.active a:hover {
+  color: #333333;
+  border: 1px solid #cccccc;
+  border-bottom: none;
+  border-radius: 3px 3px 0 0;
+  cursor: default;
+}
+
+.lead {
+  font-size: 18px;
+}
+
+.small {
+  font-size: 14.4px;
+}
+
+.muted {
+  color: #666666;
+}
+
+h1.lead {
+  margin: 16px 0;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #cccccc;
+}
+
+h1.muted, h2.muted, h3.muted, h4.muted, h5.muted, h6.muted {
+  color: #444444;
 }

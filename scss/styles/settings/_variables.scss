@@ -38,5 +38,6 @@ $basesize: 16px !default;
 
 // margins, paddings, yadda
 
-$margin: $basesize;
-$padding: $basesize;
+$margin: $basesize !default;
+$padding: $basesize !default;
+$radius: $basesize !default;

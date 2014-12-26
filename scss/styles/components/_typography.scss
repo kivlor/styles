@@ -1,0 +1,23 @@
+.lead {
+	font-size: $basesize*1.125;
+}
+
+.small {
+	font-size: $basesize*0.9;
+}
+
+.muted {
+	color: $midgrey;
+}
+
+h1.lead {
+	margin: $margin 0;
+	padding-bottom: $padding;
+	border-bottom: 1px solid $border;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	&.muted {
+		color: lighten($color, 20);
+	}
+}

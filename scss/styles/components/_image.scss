@@ -1,0 +1,42 @@
+.image {
+	position: relative;
+	padding: 0;
+	overflow: hidden;
+
+	img {
+		display: block;
+		width: 100%;
+	}
+
+
+	&.rounded {
+		border-radius: $radius;
+
+		&:after {
+			border-radius: $radius;
+		}
+	}
+
+	&.ellipsed {
+		border-radius: 50%;
+
+		&:after {
+			border-radius: 50%;			
+		}
+	}
+
+	&.framed {
+		&:after {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			display: block;
+
+			content: ' ';
+
+			border: $basesize/2 solid $border;
+		}
+	}
+}

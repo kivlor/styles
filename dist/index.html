@@ -24,23 +24,34 @@
 	<body>
 		<nav class="navigation inverse fixed">
 			<header><h1><a href="/">Styles</a></h1></header>
-			<ul>
-				<li><a href="#grid">Grid</a></li>
-				<li><a href="#headings">Headings</a></li>
-				<li><a href="#text-blocks">Text Blocks</a></li>
-				<li><a href="#lists">Lists</a></li>
-				<li><a href="#tables">Tables</a></li>
-				<li><a href="#forms">Forms</a></li>
-				<li><a href="#inputs">Inputs</a></li>
-				<li><a href="#buttons">Buttons</a></li>
-				<li><a href="#navigation">Navigation</a></li>
-				<li><a href="#messages">Messages</a></li>
-				<li><a href="#pagination">Pagination</a></li>
-				<li><a href="#panels">Panels</a></li>
-			</ul>
 		</nav>
 		
 		<div class="inner">
+			<section class="row" id="top">
+				<section class="twelve columns">
+					<h1 class="lead">Stlyes</h1>
+					<p class="lead">
+						Styles is a very simple CSS framework.
+					</p>
+					<ul>
+						<li><a href="#grid">Grid</a></li>
+						<li><a href="#headings">Headings</a></li>
+						<li><a href="#text-blocks">Text Blocks</a></li>
+						<li><a href="#lists">Lists</a></li>
+						<li><a href="#tables">Tables</a></li>
+						<li><a href="#images">Images</a></li>
+						<li><a href="#inputs">Inputs</a></li>
+						<li><a href="#buttons">Buttons</a></li>
+						<li><a href="#forms">Forms</a></li>
+						<li><a href="#navigation">Navigation</a></li>
+						<li><a href="#tabs">Tabs</a></li>
+						<li><a href="#messages">Messages</a></li>
+						<li><a href="#pagination">Pagination</a></li>
+						<li><a href="#panels">Panels</a></li>
+					</ul>
+				</section>
+			</section>
+
 			<section class="row" id="grid">
 				<h1 class="lead">Grid</h1>
 
@@ -81,6 +92,22 @@
 
 				<div class="row">
 					<div class="twelve columns"><p>twelve</p></div>
+				</div>
+
+				<div class="row">
+					<div class="two columns offset by-two"><p>offet by two</p></div>
+				</div>
+				
+				<div class="row">
+					<div class="two columns offset by-four"><p>offet by four</p></div>
+				</div>
+
+				<div class="row">
+					<div class="two columns offset by-six"><p>offet by six</p></div>
+				</div>
+
+				<div class="row">
+					<div class="two columns offset by-eight"><p>offet by eight</p></div>
 				</div>
 			</section>
 
@@ -260,45 +287,36 @@
 				</table>
 			</section>
 
-			<section class="row" id="forms">
-				<h1 class="lead">Forms</h1>
+			<section class="row" id="images">
+				<h1 class="lead">Images</h1>
+			</section>
 
-				<form class="form">
-					<fieldset>
-						<legend>legend. styles form legened</legend>
+			<section class="row padding-bottom">
+				<figure class="four columns image">
+					<img src="https://placekitten.com/g/500/500">
+				</figure>
 
-						<div class="form-input">
-							<label>label. styles form label</label>
-							<input type="text" placeholder="input. styles input">
-							<span class="form-help">It's Me! I was the turkey all along</span>
-						</div>
+				<figure class="four columns image rounded">
+					<img src="https://placekitten.com/g/500/500">
+				</figure>
 
-						<div class="form-input has-success">
-							<label>label. styles form label</label>
-							<input type="text" placeholder="input. styles input">
-							<span class="form-help">It's Me! I was the turkey all along</span>
-						</div>
+				<figure class="four columns image ellipsed">
+					<img src="https://placekitten.com/g/500/500">
+				</figure>
+			</section>
 
-						<div class="form-input has-error">
-							<label>label. styles form label</label>
-							<input type="text" placeholder="input. styles input">
-							<span class="form-help">It's Me! I was the turkey all along</span>
-						</div>
+			<section class="row">
+				<figure class="four columns image framed">
+					<img src="https://placekitten.com/g/500/500">
+				</figure>
 
-						<div class="form-input has-info">
-							<label>label. styles form label</label>
-							<input type="text" placeholder="input. styles input">
-							<span class="form-help">It's Me! I was the turkey all along</span>
-						</div>
+				<figure class="four columns image framed rounded">
+					<img src="https://placekitten.com/g/500/500">
+				</figure>
 
-						<div class="form-input has-alert">
-							<label>label. styles form label</label>
-							<input type="text" placeholder="input. styles input">
-							<span class="form-help">It's Me! I was the turkey all along</span>
-						</div>
-					</fieldset>
-				</form>
-
+				<figure class="four columns image framed ellipsed">
+					<img src="https://placekitten.com/g/500/500">
+				</figure>
 			</section>
 
 			<section class="row" id="inputs">
@@ -389,6 +407,46 @@
 				</div>
 			</section>
 
+			<section class="row" id="forms">
+				<h1 class="lead">Forms</h1>
+
+				<form class="form">
+					<fieldset>
+						<legend>legend. styles form legened</legend>
+
+						<div class="form-input">
+							<label>label. styles form label</label>
+							<input type="text" placeholder="input. styles input">
+							<span class="form-help">It's Me! I was the turkey all along</span>
+						</div>
+
+						<div class="form-input has-success">
+							<label>label. styles form label</label>
+							<input type="text" placeholder="input. styles input">
+							<span class="form-help">It's Me! I was the turkey all along</span>
+						</div>
+
+						<div class="form-input has-error">
+							<label>label. styles form label</label>
+							<input type="text" placeholder="input. styles input">
+							<span class="form-help">It's Me! I was the turkey all along</span>
+						</div>
+
+						<div class="form-input has-info">
+							<label>label. styles form label</label>
+							<input type="text" placeholder="input. styles input">
+							<span class="form-help">It's Me! I was the turkey all along</span>
+						</div>
+
+						<div class="form-input has-alert">
+							<label>label. styles form label</label>
+							<input type="text" placeholder="input. styles input">
+							<span class="form-help">It's Me! I was the turkey all along</span>
+						</div>
+					</fieldset>
+				</form>
+			</section>
+
 			<section class="row" id="navigation">
 				<h1 class="lead">Navigation</h1>
 
@@ -426,9 +484,21 @@
 						<li><a href="">Nav Item 4</a></li>
 					</ul>
 				</nav>
-
 			</section>
+				
+			<section class="row" id="tabs">
+				<h1 class="lead">Tabs</h1>
 
+				<nav class="tabs">
+					<ul>
+						<li class="active"><a href="">Tab Item 1</a></li>
+						<li><a href="">Tab Item 2</a></li>
+						<li><a href="">Tab Item 3</a></li>
+						<li><a href="">Tab Item 4</a></li>
+					</ul>
+				</nav>
+			</section>
+			
 			<section class="row" id="messages">
 				<h1 class="lead">Messages</h1>
 
@@ -463,7 +533,7 @@
 						<li><a href="">&raquo;</a></li>
 					</ul>
 				</div>
-			</section>
+			</section>		
 
 			<section class="row" id="panels">
 				<h1 class="lead">Panels</h1>
