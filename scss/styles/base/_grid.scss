@@ -3,47 +3,47 @@
 .inner {
 	margin-left: auto;
 	margin-right: auto;
-	width: $max-width;
+	max-width: $max-width;
 }
 
-.clear, .row { @include clearfix; }
+.row {
+	margin: 0 styles-gutter($gutter-width*-1);
+	width: styles-row();
+	@include clearfix;
+}
 
 .column, .columns {
 	display: inline;
 	float: left;
-	margin-left: gutter();
+	margin: 0 styles-gutter();
 
-	&:first-child, &.first {
-		margin-left: 0;
-	}
+	&.one				{ width: styles-column(1); }
+	&.two				{ width: styles-column(2); }
+	&.three				{ width: styles-column(3); }
+	&.four				{ width: styles-column(4); }
+	&.five				{ width: styles-column(5); }
+	&.six				{ width: styles-column(6); }
+	&.seven				{ width: styles-column(7); }
+	&.eight				{ width: styles-column(8); }
+	&.nine				{ width: styles-column(9); }
+	&.ten				{ width: styles-column(10); }
+	&.eleven			{ width: styles-column(11); }
+	&.twelve			{ width: styles-column(12); }
 
-	&.one				{ width: grid(1); }
-	&.two				{ width: grid(2); }
-	&.three				{ width: grid(3); }
-	&.four				{ width: grid(4); }
-	&.five				{ width: grid(5); }
-	&.six				{ width: grid(6); }
-	&.seven				{ width: grid(7); }
-	&.eight				{ width: grid(8); }
-	&.nine				{ width: grid(9); }
-	&.ten				{ width: grid(10); }
-	&.eleven			{ width: grid(11); }
-	&.twelve			{ width: grid(12); }
-
-	&.full				{ width: grid(12); }
-	&.half				{ width: grid(6); }
+	&.full				{ width: styles-column(12); }
+	&.half				{ width: styles-column(6); }
 }
 
 .offset {
-	&.by-one 			{ margin-left: grid(1) + gutter(); }
-	&.by-two 			{ margin-left: grid(2) + gutter(); }
-	&.by-three 			{ margin-left: grid(3) + gutter(); }
-	&.by-four 			{ margin-left: grid(4) + gutter(); }
-	&.by-five 			{ margin-left: grid(5) + gutter(); }
-	&.by-six 			{ margin-left: grid(6) + gutter(); }
-	&.by-seven 			{ margin-left: grid(7) + gutter(); }
-	&.by-eight 			{ margin-left: grid(8) + gutter(); }
-	&.by-nine 			{ margin-left: grid(9) + gutter(); }
-	&.by-ten 			{ margin-left: grid(10) + gutter(); }
-	&.by-eleven 		{ margin-left: grid(11) + gutter(); }
+	&.by-one 			{ margin-left: styles-offset(1)}
+	&.by-two 			{ margin-left: styles-offset(2)}
+	&.by-three 			{ margin-left: styles-offset(3)}
+	&.by-four 			{ margin-left: styles-offset(4)}
+	&.by-five 			{ margin-left: styles-offset(5)}
+	&.by-six 			{ margin-left: styles-offset(6)}
+	&.by-seven 			{ margin-left: styles-offset(7)}
+	&.by-eight 			{ margin-left: styles-offset(8)}
+	&.by-nine 			{ margin-left: styles-offset(9)}
+	&.by-ten 			{ margin-left: styles-offset(10)}
+	&.by-eleven 		{ margin-left: styles-offset(11)}
 }

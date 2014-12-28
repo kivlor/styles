@@ -1,17 +1,27 @@
 // functions
 
-// grid function lifted from bourbon.io
-
-@function grid($columns, $container-columns: $max-columns)
+@function styles-row($total-columns: $max-columns, $gutter-width: $gutter-width)
 {
-	$width: $columns * $column + ($columns - 1) * $gutter;
-	$container-width: $container-columns * $column + ($container-columns - 1) * $gutter;
+	$container-width: ($total-columns * $column-width) + (($total-columns - 1) * $gutter-width);
 
-	@return percentage($width / $container-width);
+	@return #{$container-width+$gutter-width}px;
 }
 
-@function gutter($container-columns: $max-columns, $gutter: $gutter)
+@function styles-gutter($gutter-width: $gutter-width)
 {
-	$container-width: $container-columns * $column + ($container-columns - 1) * $gutter;
-	@return percentage($gutter / $container-width);
+	@return #{$gutter-width/2}px;
+}
+
+@function styles-column($size, $gutter-width: $gutter-width)
+{
+	$width: ($size * $column-width) + (($size - 1) * $gutter-width);
+	
+	@return #{$width}px;
+}
+
+@function styles-offset($size, $gutter-width: $gutter-width)
+{
+	$width: ($size * $column-width) + ($size * $gutter-width) + ($gutter-width/2);
+
+	@return #{$width}px;	
 }

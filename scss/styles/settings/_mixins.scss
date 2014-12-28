@@ -1,8 +1,6 @@
 // mixins
 
-@mixin box-sizing($sizing) {
-	box-sizing: $sizing;
-}
+@mixin box-sizing($sizing) { box-sizing: $sizing; }
 
 @mixin clearfix() {
 	&:before, &:after { content: " "; display: table; }

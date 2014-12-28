@@ -16,7 +16,6 @@
 	}
 
 	.form-action {
-
 		.form-alternate {
 			display: inline;
 			float: right;
@@ -24,6 +23,15 @@
 			a.button {
 				margin-right: 0;
 			}
+		}
+	}
+
+	&.inline {
+		display: inline-block;
+		margin: 0;
+
+		.form-input, .form-action, label, input, button {
+			display: inline-block;
 		}
 	}
 
