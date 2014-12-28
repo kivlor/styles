@@ -668,6 +668,20 @@ a.button-small, a.button-small:link, a.button-small:visited, a.button-small:hove
   background: gray;
 }
 
+.button-fake {
+  padding: 8px 0 !important;
+  background: transparent;
+  border-color: transparent;
+  border-width: 1px 0 !important;
+  color: #111111 !important;
+}
+.button-fake:hover {
+  background: transparent !important;
+}
+.button-fake:active, .button-fake.active {
+  background: transparent !important;
+}
+
 .button[disabled] {
   background: #999999 !important;
   border-color: #999999 !important;
@@ -935,7 +949,7 @@ a.button-small, a.button-small:link, a.button-small:visited, a.button-small:hove
 }
 
 .navigation.fixed + .inner {
-  padding-top: 56px;
+  padding-top: 80px;
 }
 
 .pagination {

@@ -67,49 +67,49 @@ a.button-small, a.button-small:link, a.button-small:visited, a.button-small:hove
 	border-color: $pink;
 
 	&:hover { background: lighten($pink, 5); }
-	&:active, &.active {background: darken($pink, 5); }
+	&:active, &.active { background: darken($pink, 5); }
 }
 .button-red {
 	background: $red;
 	border-color: $red;
 
 	&:hover { background: lighten($red, 5); }
-	&:active, &.active {background: darken($red, 5); }
+	&:active, &.active { background: darken($red, 5); }
 }
 .button-purple {
 	background: $purple;
 	border-color: $purple;
 
 	&:hover { background: lighten($purple, 5); }
-	&:active, &.active {background: darken($purple, 5); }
+	&:active, &.active { background: darken($purple, 5); }
 }
 .button-blue {
 	background: $blue;
 	border-color: $blue;
 
 	&:hover { background: lighten($blue, 5); }
-	&:active, &.active {background: darken($blue, 5); }
+	&:active, &.active { background: darken($blue, 5); }
 }
 .button-aqua {
 	background: $aqua;
 	border-color: $aqua;
 
 	&:hover { background: lighten($aqua, 5); }
-	&:active, &.active {background: darken($aqua, 5); }
+	&:active, &.active { background: darken($aqua, 5); }
 }
 .button-green {
 	background: $green;
 	border-color: $green;
 
 	&:hover { background: lighten($green, 5); }
-	&:active, &.active {background: darken($green, 5); }
+	&:active, &.active { background: darken($green, 5); }
 }
 .button-yellow {
 	background: $yellow;
 	border-color: $yellow;
 
 	&:hover { background: lighten($yellow, 5); }
-	&:active, &.active {background: darken($yellow, 5); }
+	&:active, &.active { background: darken($yellow, 5); }
 }
 
 .button-muted {
@@ -117,7 +117,21 @@ a.button-small, a.button-small:link, a.button-small:visited, a.button-small:hove
 	border-color: lighten($midgrey, 20);
 
 	&:hover { background: lighten($midgrey, 25); }
-	&:active, &.active {background: lighten($midgrey, 10); }
+	&:active, &.active { background: lighten($midgrey, 10); }
+}
+
+// useful when used as a form-alternate input
+
+.button-fake {
+	padding: $padding/2 0 !important;
+	
+	background: transparent;
+	border-color: transparent;
+	border-width: 1px 0 !important;
+	color: $color !important;
+
+	&:hover { background: transparent !important; }
+	&:active, &.active { background: transparent !important; }	
 }
 
 // disabled buttons
