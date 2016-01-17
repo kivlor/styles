@@ -1,3 +1,3 @@
-## Styles
+### Styles
 
-A simple sass framework for building simple web apps. Simple.
+A simple sass framework for building simple web apps.
